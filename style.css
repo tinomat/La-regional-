@@ -89,7 +89,7 @@ body {
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.3)
         ),
-        url(assets/heroimg.jpeg);
+        url(assets/heroImg.webp);
     background-position: center;
     background-size: cover;
     color: var(--light-color);
