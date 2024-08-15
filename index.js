@@ -6,7 +6,7 @@ let content = "";
 const generarProductos = (start, end) => {
     for (let i = start; i < end && i < productos.length; i++) {
         content += `<div class="product border-radius">
-                        <div class="product-description-container">
+                        <div class="product-description-container flex alignI-center">
                             <p class="product-description">
                                 ${productos[i].name}
                             </p>
@@ -42,7 +42,7 @@ document.querySelector(".send-search").addEventListener("click", () => {
         const idProduct = product.productId;
         if (nameProduct.includes(search) || idProduct.includes(search)) {
             content += `<div class="product border-radius">
-                        <div class="product-description-container">
+                        <div class="product-description-container flex alignI-center">
                             <p class="product-description">
                                 ${product.name}
                             </p>
@@ -69,7 +69,7 @@ document.querySelector(".send-search").addEventListener("click", () => {
         content = "";
         for (let i = 0; i < 60; i++) {
             content += `<div class="product border-radius">
-                        <div class="product-description-container">
+                        <div class="product-description-container flex alignI-center">
                             <p class="product-description">
                                 ${productos[i].name}
                             </p>
@@ -106,7 +106,7 @@ categorieOptions.forEach((opt) => {
                 .toLowerCase();
             if (selectedOption == product.category.trim().toLowerCase()) {
                 content += `<div class="product border-radius">
-                        <div class="product-description-container">
+                        <div class="product-description-container flex alignI-center">
                             <p class="product-description">
                                 ${product.name}
                             </p>
@@ -118,7 +118,7 @@ categorieOptions.forEach((opt) => {
             }
             if (selectedOption == "todos") {
                 content += `<div class="product border-radius">
-                        <div class="product-description-container">
+                        <div class="product-description-container flex alignI-center">
                             <p class="product-description">
                                 ${product.name}
                             </p>
@@ -131,7 +131,7 @@ categorieOptions.forEach((opt) => {
             if (selectedOption == "oferta") {
                 if (product.oferta) {
                     content += `<div class="product border-radius">
-                        <div class="product-description-container">
+                        <div class="product-description-container flex alignI-center">
                             <p class="product-description">
                                 ${product.name}
                             </p>
@@ -145,7 +145,7 @@ categorieOptions.forEach((opt) => {
             if (selectedOption == "promo") {
                 if (product.promo) {
                     content += `<div class="product border-radius">
-                        <div class="product-description-container">
+                        <div class="product-description-container flex alignI-center">
                             <p class="product-description">
                                 ${product.name}
                             </p>
@@ -159,7 +159,7 @@ categorieOptions.forEach((opt) => {
         });
         if (content === "") {
             content = `<div class="product border-radius">
-                           <div class="product-description-container">
+                           <div class="product-description-container flex alignI-center">
                                <p class="product-description">
                                    No hay productos disponibles para la categoría seleccionada.
                                </p>

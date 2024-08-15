@@ -20,7 +20,6 @@ button {
 img {
     display: block;
     max-width: 100%;
-    height: auto;
 }
 a {
     text-decoration: none;
@@ -59,6 +58,13 @@ html {
 }
 .flex {
     display: flex;
+    flex-wrap: wrap;
+}
+.justifyC-center {
+    justify-content: center;
+}
+.alignI-center {
+    align-items: center;
 }
 .cursorPointer {
     cursor: pointer;
@@ -71,39 +77,37 @@ body {
 .header {
     position: fixed;
     width: 100%;
-    top: 0;
+    z-index: 10;
     background-color: var(--header-color);
-    padding: 1rem;
-    z-index: 2;
+    padding-block: 1rem;
 }
 .header .logo {
     max-width: 170px;
 }
 /* HEROSECTION */
-.heroimg-content {
-    min-height: 100dvh;
-    display: grid;
-    place-content: center;
+.heroimg-container {
+    max-width: 100%;
+    padding-block: 180px;
     background-image: linear-gradient(
             0deg,
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.3)
         ),
-        url(assets/heroImg.webp);
+        url(assets/heroimg768.png);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+}
+
+.heroimg-content {
     color: var(--light-color);
-    filter: drop-shadow();
+    flex-direction: column;
 }
 .h1 {
+    padding-bottom: 1rem;
     text-align: center;
-    padding-inline: 3rem;
     font-size: clamp(2.1rem, 6dvw, 3rem);
-    padding-top: 11rem;
 }
-.heroimg-btn {
-    margin: 50px auto 0;
-}
+
 /* PRODUCTS */
 .products-container {
     color: var(--light-color);
@@ -132,29 +136,23 @@ body {
 }
 .products {
     padding: 3rem 1rem;
-    max-width: 1400px;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 .product {
     background: var(--bg-items);
     padding: 0.5rem;
-    margin-bottom: 0.8rem;
 }
 .product-description-container {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
 }
 .product-description {
     font-size: 0.9rem;
 }
 /* CATEGORIES-SEARCH */
 .search-container {
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.7rem;
     margin-bottom: 1rem;
+    gap: 0.8rem;
 }
 .search-container .send-search {
     padding: 0.2rem 1rem;
@@ -174,7 +172,6 @@ body {
 .categories-dropdown {
     color: #000;
     background-color: var(--light-color);
-    height: auto;
     overflow: hidden;
     position: relative;
     width: 202px;
@@ -185,7 +182,6 @@ body {
     justify-content: space-between;
 }
 .dropdown-icon {
-    align-items: center;
     transition: rotate 0.3s ease;
 }
 .dropdown-icon-open {
@@ -230,5 +226,4 @@ body {
 .footer .red-link {
     gap: 5px;
     font-size: 0.75rem;
-    align-items: center;
 }
