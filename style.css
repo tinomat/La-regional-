@@ -218,3 +218,16 @@ body {
         background: #ebeae775;
     }
 }
+
+/* FOOTER */
+.footer {
+    padding-block: 3rem 1rem;
+}
+.redes {
+    justify-content: space-evenly;
+}
+.footer .red-link {
+    gap: 5px;
+    font-size: 0.75rem;
+    align-items: center;
+}
