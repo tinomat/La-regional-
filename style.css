@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* RESETS */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+input,
+select,
+button {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    outline: none;
+    border: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* VARIABLES */
+:root {
+    /* COLORS */
+    --header-color: #ebeae7;
+    --light-color: #ebeae7;
+    --dark-color: #171718;
+    --bg-btn: #037dc9;
+    --bg-products: #171718;
+    --bg-items: #2a2a2a;
+    /* FONT FAMILY */
+    --ff: "Poppins";
+}
+/* UTILTY CLASS */
+.hidden {
+    display: none;
+}
+.border-radius {
+    border-radius: 0.6rem;
+}
+.btn {
+    font-weight: 500;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    padding: 0.3rem 1.5rem;
+}
+.margin-auto {
+    margin: auto;
+}
+.flex {
+    display: flex;
+}
+.cursorPointer {
+    cursor: pointer;
+}
+/* BODY */
+body {
+    font-family: var(--ff);
+}
+/* HEADER */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--header-color);
+    padding: 1rem;
+    z-index: 2;
+}
+.header .logo {
+    max-width: 170px;
+}
+/* HEROSECTION */
+.heroimg-content {
+    min-height: 100dvh;
+    display: grid;
+    place-content: center;
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.3)
+        ),
+        url(assets/heroimg.jpeg);
+    background-position: center;
+    background-size: cover;
+    color: var(--light-color);
+    filter: drop-shadow();
+}
+.h1 {
+    text-align: center;
+    padding-inline: 3rem;
+    font-size: clamp(2.1rem, 6dvw, 3rem);
+}
+.heroimg-btn {
+    margin: 50px auto 0;
+}
+/* PRODUCTS */
+.products-container {
+    color: var(--light-color);
+    min-height: 80vh;
+    background-color: var(--bg-products);
+    padding-block: 6rem;
+}
+.h2-container {
+    position: relative;
+}
+.products-h2 {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 5rem;
+}
+.products-h2::after {
+    content: "";
+    height: 3px;
+    width: 100px;
+    background-color: var(--light-color);
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.products {
+    padding: 3rem 1rem;
+    max-width: 1400px;
+}
+.product {
+    background: var(--bg-items);
+    padding: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+.product-description-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.product-description {
+    font-size: 0.9rem;
+}
+/* CATEGORIES-SEARCH */
+.search-container {
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+}
+.search-container .send-search {
+    padding: 0.2rem 1rem;
+}
+.searchE {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: 3px 4px;
+}
+.searchE::placeholder {
+    font-size: 0.9rem;
+}
+.searchE:focus {
+    outline: 1px solid #ebeae7;
+    outline-offset: 2px;
+}
+.categories-dropdown {
+    color: #000;
+    background-color: var(--light-color);
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    width: 202px;
+    flex-direction: column;
+    padding: 3px 4px;
+}
+.selected-container {
+    justify-content: space-between;
+}
+.dropdown-icon {
+    align-items: center;
+    transition: rotate 0.3s ease;
+}
+.dropdown-icon-open {
+    transform: rotate(-90deg);
+    transition: rotate 0.3s ease;
+}
+.categories-container {
+    transform: translateY(-2000px);
+    position: absolute;
+    transition: transform 0.4s ease-out, position 0.3s ease-out;
+    z-index: -1;
+}
+.categories-container-open {
+    transform: translateY(0px);
+    transition: transform 0.2s ease-in, position 0.3s ease-in;
+    position: relative;
+    z-index: 1;
+}
+.categorie-option:hover {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+/* LOADMORE */
+.loadMore {
+    font-size: 0.8rem;
+}
+.loadMore:hover,
+.heroimg-btn:hover {
+    background-color: #ebeae792;
+}
