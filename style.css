@@ -211,10 +211,9 @@ body {
 .loadMore {
     font-size: 0.8rem;
 }
-.loadMore:focus-visible {
-    background-color: var(--light-color);
-}
-.loadMore:hover,
-.heroimg-btn:hover {
-    background-color: #ebeae792;
+@media screen and (min-width: 768px) {
+    .loadMore:hover,
+    .heroimg-btn:hover {
+        background: #ebeae775;
+    }
 }
