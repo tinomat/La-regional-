@@ -101,10 +101,10 @@ categorieOptions.forEach((opt) => {
         dropdownIcon.classList.remove("dropdown-icon-open");
         let content = "";
         productos.forEach((product) => {
-            if (
-                categorieSelected.textContent.trim().toLowerCase() ==
-                product.category.trim().toLowerCase()
-            ) {
+            const selectedOption = categorieSelected.textContent
+                .trim()
+                .toLowerCase();
+            if (selectedOption == product.category.trim().toLowerCase()) {
                 content += `<div class="product border-radius">
                         <div class="product-description-container">
                             <p class="product-description">
@@ -116,7 +116,7 @@ categorieOptions.forEach((opt) => {
                         </div>
                     </div>`;
             }
-            if (categorieSelected.textContent.trim().toLowerCase() == "todos") {
+            if (selectedOption == "todos") {
                 content += `<div class="product border-radius">
                         <div class="product-description-container">
                             <p class="product-description">
@@ -127,6 +127,34 @@ categorieOptions.forEach((opt) => {
                             </p>    
                         </div>
                     </div>`;
+            }
+            if (selectedOption == "oferta") {
+                if (product.oferta) {
+                    content += `<div class="product border-radius">
+                        <div class="product-description-container">
+                            <p class="product-description">
+                                ${product.name}
+                            </p>
+                            <p class= "product-description">
+                                Id: ${product.productId}
+                            </p>    
+                        </div>
+                    </div>`;
+                }
+            }
+            if (selectedOption == "promo") {
+                if (product.promo) {
+                    content += `<div class="product border-radius">
+                        <div class="product-description-container">
+                            <p class="product-description">
+                                ${product.name}
+                            </p>
+                            <p class= "product-description">
+                                Id: ${product.productId}
+                            </p>    
+                        </div>
+                    </div>`;
+                }
             }
         });
         if (content === "") {
