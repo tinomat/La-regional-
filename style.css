@@ -151,6 +151,7 @@ body {
 .search-container {
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 0.7rem;
     margin-bottom: 1rem;
 }
@@ -209,6 +210,9 @@ body {
 /* LOADMORE */
 .loadMore {
     font-size: 0.8rem;
+}
+.loadMore:focus-visible {
+    background-color: var(--light-color);
 }
 .loadMore:hover,
 .heroimg-btn:hover {
