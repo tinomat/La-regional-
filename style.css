@@ -181,22 +181,14 @@ body {
 .selected-container {
     justify-content: space-between;
 }
-.dropdown-icon {
-    transition: rotate 0.3s ease;
-}
 .dropdown-icon-open {
     transform: rotate(-90deg);
-    transition: rotate 0.3s ease;
 }
 .categories-container {
-    transform: translateY(-2000px);
     position: absolute;
-    transition: transform 0.4s ease-out, position 0.3s ease-out;
     z-index: -1;
 }
 .categories-container-open {
-    transform: translateY(0px);
-    transition: transform 0.2s ease-in, position 0.3s ease-in;
     position: relative;
     z-index: 1;
 }
