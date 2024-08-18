@@ -58,7 +58,7 @@ document.querySelector(".send-search").addEventListener("click", () => {
         content = `<div class="product border-radius">
                         <div class="product-description-container">
                             <p class="product-description">
-                                No se ha encontrado resultado para ${inputSearch.value}
+                                No se ha encontrado resultado para "${inputSearch.value}"
                             </p>
                         </div>
                     </div>`;
