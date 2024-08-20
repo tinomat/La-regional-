@@ -174,7 +174,6 @@ body {
     background-color: var(--light-color);
     overflow: hidden;
     position: relative;
-    width: 202px;
     flex-direction: column;
     padding: 3px 4px;
 }
@@ -205,6 +204,9 @@ body {
     .heroimg-btn:hover,
     .send-search:hover {
         background: #ebeae775;
+    }
+    .categories-dropdown {
+        width: 300px;
     }
 }
 
