@@ -157,15 +157,6 @@ categorieOptions.forEach((opt) => {
                 }
             }
         });
-        if (content === "") {
-            content = `<div class="product border-radius">
-                           <div class="product-description-container flex alignI-center">
-                               <p class="product-description">
-                                   No hay productos disponibles para la categoría seleccionada.
-                               </p>
-                           </div>
-                       </div>`;
-        }
         productsDiv.innerHTML = content;
     });
 });
