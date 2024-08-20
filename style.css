@@ -196,6 +196,9 @@ body {
 .categorie-option {
     border-bottom: 1px solid #ccc;
 }
+.categorie-option:last-child {
+    border: none;
+}
 .categorie-option:hover {
     background-color: var(--dark-color);
     color: var(--light-color);
