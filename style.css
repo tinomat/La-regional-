@@ -152,7 +152,7 @@ body {
 /* CATEGORIES-SEARCH */
 
 .search-container {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     gap: 0.8rem;
 }
 .search-container .send-search {
@@ -162,6 +162,7 @@ body {
     background-color: var(--light-color);
     color: var(--dark-color);
     padding: 3px 4px;
+    width: 95%;
 }
 .searchE::placeholder {
     font-size: 0.9rem;
@@ -215,6 +216,15 @@ body {
     }
     .categories-dropdown {
         width: 300px;
+    }
+    .search-container {
+        flex-direction: column;
+    }
+    .searchE {
+        width: 350px;
+    }
+    .send-search {
+        width: fit-content;
     }
 }
 
