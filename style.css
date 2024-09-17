@@ -138,6 +138,8 @@ body {
     padding: 3rem 1rem;
     flex-direction: column;
     gap: 0.5rem;
+    width: min(90%, 1400px);
+    margin: 0 auto;
 }
 .product {
     background: var(--bg-items);
