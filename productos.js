@@ -202,24 +202,6 @@ const productos = [
         category: "Aperitivo",
     },
     {
-        productId: "1449",
-        name: "Fernet Branca 1lt Oferta",
-        category: "Aperitivo",
-        oferta: true,
-    },
-    {
-        productId: "1450",
-        name: "Fernet Branca 450ml Oferta",
-        category: "Aperitivo",
-        oferta: true,
-    },
-    {
-        productId: "1451",
-        name: "Fernet Branca 750ml Oferta",
-        category: "Aperitivo",
-        oferta: true,
-    },
-    {
         productId: "1468",
         name: "Champagne Mumm Leger 269ml",
         category: "Aperitivo",
@@ -233,18 +215,6 @@ const productos = [
         productId: "1455",
         name: "Azucar Comun 1kg Pack x 10 Unidades",
         category: "Azucar",
-    },
-    {
-        productId: "1456",
-        name: "Azucar Comun 1kg Pack x 10 Unidades (Oferta x 10 packs)",
-        category: "Azucar",
-        oferta: true,
-    },
-    {
-        productId: "1457",
-        name: "Azucar Comun 1kg Pack x 10 Unidades (Oferta x 20 packs)",
-        category: "Azucar",
-        oferta: true,
     },
     {
         productId: "512",
@@ -882,12 +852,6 @@ const productos = [
         category: "Cerveza 361",
     },
     {
-        productId: "1452",
-        name: "Cerveza 361 Bot 1.5lt N/Ret Pack x 6 Unidades Oferta",
-        category: "Cerveza 361",
-        oferta: true,
-    },
-    {
         productId: "109",
         name: "Cerveza Schneider Lata 473ml",
         category: "Cervezas",
@@ -943,12 +907,6 @@ const productos = [
         category: "Cervezas",
     },
     {
-        productId: "415",
-        name: "Cerveza Amstel Lager 1lt (cajon) Super Oferta",
-        category: "Cervezas",
-        oferta: true,
-    },
-    {
         productId: "440",
         name: "Cerveza Imperial IPA Lata 473ml",
         category: "Cervezas",
@@ -999,12 +957,6 @@ const productos = [
         category: "Cervezas",
     },
     {
-        productId: "569",
-        name: "Cerveza Palermo 1lt Promo x 5 Cajas",
-        category: "Cervezas",
-        promo: true,
-    },
-    {
         productId: "578",
         name: "Cerveza Imperial Lata 473ml",
         category: "Cervezas",
@@ -1043,12 +995,6 @@ const productos = [
         productId: "751",
         name: "Cerveza Imperial Amber Lata 710ml",
         category: "Cervezas",
-    },
-    {
-        productId: "758",
-        name: "Cerveza Imperial Golden 1lt Oferta",
-        category: "Cervezas",
-        oferta: true,
     },
     {
         productId: "877",
@@ -1139,12 +1085,6 @@ const productos = [
         productId: "1334",
         name: "Imperial Golden Sin Alcohol 355ml",
         category: "Cervezas",
-    },
-    {
-        productId: "1392",
-        name: "Cerveza Schneider 1lt Oferta Cajon",
-        category: "Cervezas",
-        oferta: true,
     },
     {
         productId: "1489",
@@ -1685,18 +1625,6 @@ const productos = [
         productId: "464",
         name: "Speed ultra XL 473ml",
         category: "Energizantes",
-    },
-    {
-        productId: "531",
-        name: "Speed ultra x 12 Super Oferta",
-        category: "Energizantes",
-        oferta: true,
-    },
-    {
-        productId: "629",
-        name: "Speed 250ml Pack x 24 Oferta",
-        category: "Energizantes",
-        ofeta: true,
     },
     {
         productId: "1285",
