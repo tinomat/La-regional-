@@ -60,12 +60,6 @@ const productos = [
         category: "Aperitivo",
     },
     {
-        productId: "555",
-        name: "Promo Champagne Renaissance x 6 + 12 speed",
-        category: "Aperitivo",
-        promo: true,
-    },
-    {
         productId: "576",
         name: "Cinzano",
         category: "Aperitivo",
@@ -1804,11 +1798,6 @@ const productos = [
     {
         productId: "1473",
         name: "Vino Cafayate Dulce Torrontes 750ml",
-        category: "Inicio",
-    },
-    {
-        productId: "1493",
-        name: "Promo Brio Multifruta (sin cargo)",
         category: "Inicio",
     },
     {
